@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Baltić">
+    <meta name="description" content="Domaća zadaća 3 - Web stranica Planinska kuća Bambi, Vlašić">
+    <meta name="project" content="Projektni zadatak - Turizam/Smještaj">
+    
+    <title>Planinska kuća Bambi | Vlašić</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS - Mobile First pristup */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Glatko skrolanje unutar stranice */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            background-color: #fdfaf5;
+            color: #333;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #4b3621;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+            display: block;
+        }
+
+        .login-box {
+            background: #ff0000;
+            color: white;
+            padding: 10px 15px;
+            border: 2px solid #ffff00;
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+            max-width: 120px;
+        }
+
+        nav.top-nav {
+            background: #2d5a27;
+            padding: 12px;
+            text-align: center;
+            border-bottom: 3px solid #1e3d1a;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 13px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column; 
+            flex: 1;
+        }
+
+        main {
+            background: #ffffff;
+            padding: 30px;
+            flex: 3;
+        }
+
+        aside {
+            background: #e9ecef;
+            padding: 30px;
+            flex: 1;
+        }
+
+        .promo-box {
+            background: #ff0000;
+            color: white;
+            padding: 20px;
+            border: 2px solid #ffff00;
+            margin-top: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h1 { color: #4b3621; margin-bottom: 20px; }
+        h2, h3 { color: #2d5a27; margin-top: 20px; }
+
+        .text-section {
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        img.content-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 15px 0;
+            border: 5px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery-img {
+            flex: 1 1 250px;
+            max-width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border: 5px solid white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #4b3621;
+        }
+
+        th { background: #4b3621; color: white; padding: 12px; }
+        td { padding: 10px; background: #fff; }
+
+        footer {
+            background: #cbdadb;
+            padding: 25px;
+            text-align: center;
+            border-top: 2px solid #4b3621;
+        }
+
+        .footer-nav { margin-bottom: 15px; }
+        .footer-nav a { color: #333; text-decoration: none; margin: 0 10px; font-weight: bold; }
+
+        @media (min-width: 768px) {
+            .main-container {
+                flex-direction: row;
+            }
+            .login-box { font-size: 14px; max-width: 200px; }
+            nav a { font-size: 14px; margin: 0 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <img src="logo.jpg" alt="Bambi Logo" class="logo-img">
+            </div>
+            <div class="login-box">
+                Prijavi se / Registriraj se
+            </div>
+        </header>
+
+        <nav class="top-nav">
+            <a href="zadaca.html">Početna</a>
+            <a href="#moja-galerija">Galerija</a>
+            <a href="#">Rezervacije</a>
+            <a href="vjezba4.html">Vježba 4</a>
+            <a href="vjezba5.html">Vježba 5</a>
+        </nav>
+
+        <div class="main-container">
+            <main>
+                <h1>Dobrodošli u Planinsku kuću Bambi</h1>
+                <hr>
+                
+                <section class="text-section">
+                    <h2>Odmor u srcu Vlašića</h2>
+                    <p>Uživajte u autentičnom planinskom ambijentu naše vikendice. Smještena u neposrednoj blizini skijaških staza, kuća Bambi nudi toplinu drveta, kamin i savršen mir za vašu porodicu i prijatelje.</p>
+                    <img src="slika1.jpg" alt="Vikendica Bambi Zimi" class="content-img">
+                </section>
+
+                <section class="text-section">
+                    <h3>Kapacitet i Sadržaj</h3>
+                    <p>Kuća je opremljena modernom kuhinjom, prostranim dnevnim boravkom sa kaminom i udobnim spavaćim sobama na spratu. Idealan smještaj za 20-25 osoba.</p>
+                </section>
+
+                <section class="text-section" id="moja-galerija">
+                    <h3>Galerija</h3>
+                    <p>Zavirite u unutrašnjost naše kuće i osjetite toplinu planinskog doma.</p>
+                    <div class="gallery-container">
+                        <img src="slika2.jpeg" alt="Dnevni boravak Bambi" class="gallery-img">
+                        <img src="slika3.jpeg" alt="Kuhinja i blagovaonica" class="gallery-img">
+                        <img src="slika4.jpeg" alt="Spavaća soba" class="gallery-img">
+                    </div>
+                </section>
+
+                <section class="table-container">
+                    <h3>Cjenik noćenja (Sezona 2025/26)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Period</th>
+                                <th>Minimalni boravak</th>
+                                <th>Cijena po noći</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Predsezona (do 15.12.)</td>
+                                <td>2 noćenja</td>
+                                <td>150 KM</td>
+                            </tr>
+                            <tr>
+                                <td>Praznici (Nova Godina)</td>
+                                <td>5 noćenja</td>
+                                <td>1350 KM</td>
+                            </tr>
+                            <tr>
+                                <td>Zimska sezona (Siječanj)</td>
+                                <td>3 noćenja</td>
+                                <td>450 KM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <p>Pratite nas na Instagramu: <a href="https://www.instagram.com/planinska_kuca_bambi/" target="_blank">@planinska_kuca_bambi</a></p>
+            </main>
+
+            <aside>
+                <h3>Kontakt Info</h3>
+                <p>Lokacija: Vlašić, BiH</p>
+                <p>Telefon: +387 63 428 558</p>
+                
+                <div class="promo-box">
+                    SPECIJALNI POPUST!<br>
+                    -10% za rezervacije u Travnju!
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            <div class="footer-nav">
+                <a href="#">Uvjeti korištenja</a> | 
+                <a href="#">Pravila privatnosti</a> | 
+                <a href="https://www.fsre.sum.ba" target="_blank">FSRE</a>
+            </div>
+            <hr>
+            <p><strong>Autor dokumenta:</strong> Ivan Baltić</p>
+            <p>Projektni tim: Samostalni rad</p>
+            <p>Email: <a href="mailto:ivanbaltic78@gmail.com">ivanbaltic78@gmail.com</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
