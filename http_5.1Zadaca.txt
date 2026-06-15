@@ -1,0 +1,24 @@
+2.1
+a) Moj preglednik pokrece verziju http/1.1 to sam vidio tako sto sam u dev tools otisao na name i pritiskom na desni
+klik se pojavio izbornik u kojem samo treba oznaciti ako zelimo da se ispise protokol.
+b) Pokrenuta je ponovno ista verzija http/1.1.
+c) Preglednik moze prihvatiti hrvatski, engleski(Velika Britanija), engleski(US).(hr-HR,hr;q=0.9,en-GB;q=0.8,en;q=0.7,en-US;q=0.6)
+d) Moja IP adresa je 192.168.56.1 I nju sam vidio u naredbenom retku. IP adresa od SUM-a je 212.39.111.27 i nju sam 
+vidio u dev tools na network i onda klikom na zahtjev mooodle sam vidio sta pise u header-remote address.
+e) Datoteka (http://info.cern.ch/hypertext/WWW/TheProject.html) je zadnji put modificirana 3.12.1992., to vidimo u 
+response headers gdje pise: Last-Modified ….
+f) U moj preglednik se vraca 2217 bajtova i to vidim u response-headers pod Content-Length.
+g) Web stranicu posluzuje Apache i to vidimo u dev tools - response headers gdje pise Server i zatim naziv servera.
+h) Preglednik moze prihvatiti hrvatski, engleski(Velika Britanija), engleski(US).(hr-HR,hr;q=0.9,en-GB;q=0.8,en;q=0.7,en-US;q=0.6)
+2.2
+1) a) Ovdje se radi o application/pdf datoteci.
+   b) Velicina resursa je 800 kB sto mozemo vidjeti u size stupcu.
+   c) Verzija http posluzitelja je http/1.1.
+
+2) a) Ovdje se radi o image/png datoteci.
+   b) Velicina resursa je 15684 bajtova.
+   c) Verzija http posluzitelja je takodjer http/1.1.
+
+3) a) Radi se o text/html datoteci.
+   b) Vidimo samo velicinu error 404 stranice a ona je 1.1 kB.
+   c) Verzija http posluzitelja je h2 tj. HTTP/2.
